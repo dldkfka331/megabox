@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="webstoryboy">
-    <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
-    <meta name="keywords" content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 사이트 만들기, 따라하기">
-    <title>메가박스 사이트 코딩하기</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/swiper.css">
-    
-    <!-- 파비콘 -->
-    <link rel="shortcut icon" href="assets/icons/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon_72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
-    
-    <!-- 페이스북 메타 태그 -->
-    <meta property="og:title" content="메가박스 사이트 만들기" />
-    <meta property="og:url" content="https://github.com/webstoryboy/megabox2019" />
-    <meta property="og:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg" />
-    <meta property="og:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다." />
-   
-    <!-- 트위터 메타 태그 -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="메가박스 사이트 만들기">
-    <meta name="twitter:url" content="https://github.com/webstoryboy/megabox2019/">
-    <meta name="twitter:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg">
-    <meta name="twitter:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
-    <!--웹폰트-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
-    
-    <!-- HTLM5shiv ie6~8 -->
-    <!--[if lt IE 9]> 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="author" content="webstoryboy">
+   <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+   <meta name="keywords" content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 사이트 만들기, 따라하기">
+   <title>메가박스 사이트 코딩하기</title>
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="assets/css/reset.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/swiper.css">
+   <link rel="stylesheet" href="assets/css/font-awesome.css">
+
+   <!-- 파비콘 -->
+   <link rel="shortcut icon" href="assets/icons/favicon.ico">
+   <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon_72.png" />
+   <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
+   <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />
+
+   <!-- 페이스북 메타 태그 -->
+   <meta property="og:title" content="메가박스 사이트 만들기" />
+   <meta property="og:url" content="https://github.com/webstoryboy/megabox2019" />
+   <meta property="og:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg" />
+   <meta property="og:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다." />
+
+   <!-- 트위터 메타 태그 -->
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:title" content="메가박스 사이트 만들기">
+   <meta name="twitter:url" content="https://github.com/webstoryboy/megabox2019/">
+   <meta name="twitter:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg">
+   <meta name="twitter:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+   <!--웹폰트-->
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean"
+      rel="stylesheet">
+
+   <!-- HTLM5shiv ie6~8 -->
+   <!--[if lt IE 9]> 
       <script src="assets/js/html5shiv.min.js"></script>
       <script type="text/javascript">
          alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
       </script>
    <![endif]-->
 </head>
+
 <body>
 
    <header id="header">
@@ -85,7 +90,7 @@
                <div class="row">
                   <div class="bm_left">
                      <ul>
-                        <li class="total"><a href="#">전체메뉴</a></li>
+                        <li class="total"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i> 전체메뉴</a></li>
                         <li class="line"><a href="#">필름 소사이어티</a></li>
                         <li><a href="#">클래식 소사이어티</a></li>
                      </ul>
@@ -105,30 +110,555 @@
             </div>
          </div>
       </div>
+      <!--//banner_class-->
       <div class="slider">
          <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide ss1"></div>
-                <div class="swiper-slide ss2"></div>
-                <div class="swiper-slide ss3"></div>
+               <div class="swiper-slide ss1">
+                  <div class="container">
+                     <div class="row">
+                        <h2>보스 베이비 <em>The Boss Baby</em></h2>
+                        <p>귀여운 얼굴 뒤 숨겨진 반전포스 세상에 없던 베이비가 온다!</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide ss2">
+                  <div class="container">
+                     <div class="row">
+                        <h2>레옹 <em>Leon</em></h2>
+                        <p>I think we'll be okay here, Leon.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide ss3">
+                  <div class="container">
+                     <div class="row">
+                        <h2>007 스펙터 <em>Spectre</em></h2>
+                        <p>최악의 적 스펙터와 제임스 본드의 과거<br>
+                           그리고 그 속에 숨겨진 거대한 비밀!</p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-        </div>
+         </div>
       </div>
+      <!--//slider_class-->
    </section>
    <!--//banner-->
-    
-    
-    <!-- 자바스크립트 -->
-    <script src="assets/js/jquery.min_1.12.4.js"></script>
-    <script src="assets/js/modernizr-custom.js"></script>
-    <script src="assets/js/ie-checker.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <!-- swiper -->
-    <script>
-      var mySwiper = new Swiper ('.swiper-container', {
+
+   <section id="movie">
+      <div class="container">
+         <div class="row">
+            <div class="movie">
+               <h2 class="ir_so">영화 예매</h2>
+               <div class="movie_tit">
+                  <ul>
+                     <li class="active"><a href="#">박스오피스</a></li>
+                     <li><a href="#">최근개봉작</a></li>
+                     <li><a href="#">상영예정작</a></li>
+                     <li><a href="#">큐레이션</a></li>
+                  </ul>
+               </div>
+               <div class="movie_chart">
+                  <div class="swiper-container2">
+                     <div class="chart_cont1 swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster101.jpg" srcset="assets/img/poster101@2.jpg 2x" alt="나이브스 아웃">
+                              </figure>
+                              <div class="rank"><strong>1</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon all ir_pm">전체관람가</span><strong>나이브스 아웃</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster105.jpg" srcset="assets/img/poster105@2.jpg 2x"
+                                    alt="버즈 오브 프레이">
+                              </figure>
+                              <div class="rank"><strong>2</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">12세 관람가</span><strong>버즈 오브 프레이</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster109.jpg" srcset="assets/img/poster109@2.jpg 2x" alt="뮬란">
+                              </figure>
+                              <div class="rank"><strong>3</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a15 ir_pm">15세 관람가</span><strong>뮬란</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster108.jpg" srcset="assets/img/poster108@2.jpg 2x" alt="그루지">
+                              </figure>
+                              <div class="rank"><strong>4</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a19 ir_pm">19세 관람가</span><strong>그루지</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster103.jpg" srcset="assets/img/poster103@2.jpg 2x" alt="캣츠">
+                              </figure>
+                              <div class="rank"><strong>5</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon all ir_pm">전체관람가</span><strong>캣츠</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster102.jpg" srcset="assets/img/poster102@2.jpg 2x" alt="포드v페라리">
+                              </figure>
+                              <div class="rank"><strong>6</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">12세 관람가</span><strong>포드v페라리</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--//chart_cont1-->
+                  <div class="swiper-container2">
+                     <div class="chart_cont2 swiper-wrapper">
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster103.jpg" srcset="assets/img/poster103@2.jpg 2x" alt="캣츠">
+                              </figure>
+                              <div class="rank"><strong>1</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon all ir_pm">전체관람가</span><strong>캣츠</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster102.jpg" srcset="assets/img/poster102@2.jpg 2x" alt="포드v페라리">
+                              </figure>
+                              <div class="rank"><strong>2</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">12세 관람가</span><strong>포드v페라리</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster108.jpg" srcset="assets/img/poster108@2.jpg 2x" alt="그루지">
+                              </figure>
+                              <div class="rank"><strong>3</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a19 ir_pm">19세 관람가</span><strong>그루지</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster109.jpg" srcset="assets/img/poster109@2.jpg 2x" alt="뮬란">
+                              </figure>
+                              <div class="rank"><strong>4</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a15 ir_pm">15세 관람가</span><strong>뮬란</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster03.jpg" srcset="assets/img/poster03@2.jpg 2x" alt="마스터">
+                              </figure>
+                              <div class="rank"><strong>5</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">15세 관람가</span><strong>마스터</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div  class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster02.jpg" srcset="assets/img/poster02@2.jpg 2x" alt="신세계">
+                              </figure>
+                              <div class="rank"><strong>6</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">15세 관람가</span><strong>신세계</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--//chart_cont2-->
+                  <div class="swiper-container2">
+                     <div class="chart_cont3 swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster106.jpg" srcset="assets/img/poster106@2.jpg 2x" alt="닥터 두리틀">
+                              </figure>
+                              <div class="rank"><strong>1</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon all ir_pm">전체관람가</span><strong>닥터 두리틀</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster107.jpg" srcset="assets/img/poster05@2.jpg 2x" alt="스폰지밥 무비">
+                              </figure>
+                              <div class="rank"><strong>2</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a15 ir_pm">12세 관람가</span><strong>스폰지밥 무비</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster02.jpg" srcset="assets/img/poster02@2.jpg 2x" alt="신세계">
+                              </figure>
+                              <div class="rank"><strong>3</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">15세 관람가</span><strong>신세계</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster08.jpg" srcset="assets/img/poster08@2.jpg 2x" alt="겟아웃">
+                              </figure>
+                              <div class="rank"><strong>4</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a19 ir_pm">19세 관람가</span><strong>겟아웃</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster06.jpg" srcset="assets/img/poster06@2.jpg 2x" alt="괴물">
+                              </figure>
+                              <div class="rank"><strong>5</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">전체관람가</span><strong>괴물</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster10.jpg" srcset="assets/img/poster10@2.jpg 2x" alt="보헤미안 랩소디">
+                              </figure>
+                              <div class="rank"><strong>6</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a15 ir_pm">12세 관람가</span><strong>보헤미안 랩소디</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--//chart_cont3-->
+                  <div class="swiper-container2">
+                     <div class="chart_cont4  swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster09.jpg" srcset="assets/img/poster09@2.jpg 2x" alt="문라이트">
+                              </figure>
+                              <div class="rank"><strong>1</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon all ir_pm">전체관람가</span><strong>문라이트</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster110.jpg" srcset="assets/img/poster110@2.jpg 2x" alt="애드 아스트라">
+                              </figure>
+                              <div class="rank"><strong>2</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">12세 관람가</span><strong>애드 아스트라</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster109.jpg" srcset="assets/img/poster109@2.jpg 2x" alt="뮬란">
+                              </figure>
+                              <div class="rank"><strong>3</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a15 ir_pm">15세 관람가</span><strong>뮬란</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster104.jpg" srcset="assets/img/poster104@2.jpg 2x"
+                                    alt="스타워즈: 라이즈 오브 스카이워커">
+                              </figure>
+                              <div class="rank"><strong>4</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a19 ir_pm">19세 관람가</span><strong>스타워즈</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster06.jpg" srcset="assets/img/poster06@2.jpg 2x" alt="괴물">
+                              </figure>
+                              <div class="rank"><strong>5</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a12 ir_pm">15세 관람가</span><strong>괴물</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="poster">
+                              <figure>
+                                 <img src="assets/img/poster08.jpg" srcset="assets/img/poster08@2.jpg 2x" alt="겟아웃">
+                              </figure>
+                              <div class="rank"><strong>6</strong></div>
+                              <div class="mx">
+                                 <span class="icon m ir_pm">MX</span>
+                                 <span class="icon b ir_pm">Boutique</span>
+                              </div>
+                           </div>
+                           <div class="info">
+                              <h3><span class="icon a19 ir_pm">19세 관람가</span><strong>겟아웃</strong></h3>
+                              <div class="info_btn">
+                                 <a href="#">상세보기</a>
+                                 <a href="#">예매하기</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--//chart_cont4-->
+               </div>
+            </div>
+            <!--//movie_class-->
+         </div>
+      </div>
+   </section>
+   <!--//movie-->
+
+
+   <!-- 자바스크립트 -->
+   <script src="assets/js/jquery.min_1.12.4.js"></script>
+   <script src="assets/js/modernizr-custom.js"></script>
+   <script src="assets/js/ie-checker.js"></script>
+   <script src="assets/js/swiper.min.js"></script>
+
+   <script>
+      /* 배너 이미지 슬라이드*/
+      var mySwiper = new Swiper('.swiper-container', {
          navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -141,7 +671,55 @@
             delay: 5000,
          },
       })
-      </script>
+
+      /* 영화 차트 이미지 슬라이드*/
+      var mySwiper = new Swiper('.swiper-container2', {
+         slidesPerView: 4,
+         spaceBetween: 24,
+         // mousewheel: {
+         //    invert: true,
+         // },
+         keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+         },
+         // autoplay: {
+         //    delay: 6000,
+         // },
+         breakpoints: {
+            600: {
+               slidesPerView: 1.4,
+               spaceBetween: 24
+            },
+            768: {
+               slidesPerView: 2,
+               spaceBetween: 24
+            },
+            960: {
+               slidesPerView: 3,
+               spaceBetween: 24
+            }
+         }
+      })
+
+      /* 영화 차트 탭 메뉴 */
+      let movieBtn = $(".movie_tit > ul > li");
+      let movieCont = $(".movie_chart > div");
+
+      movieCont.hide().eq(0).show();
+      $(movieBtn).click(function (e) {
+         e.preventDefault();
+         let target = $(this);
+         let index = target.index();
+         movieBtn.removeClass("active");
+         target.addClass("active");
+         movieCont.css("display", "none");
+         movieCont.eq(index).css("display", "block")
+      })
+
+      
+   </script>
 
 </body>
+
 </html>
