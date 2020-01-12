@@ -52,19 +52,18 @@
         function resizePlayer() {
             var viewport = {}, frame = {}, modal = {};
 
-            viewport.width = $( window ).width();
-            viewport.height = $( window ).height();
+            viewport.width = $(window).width();
+            viewport.height = $(window).height();
 
             frame.width = viewport.width;
-            frame.height = frame.width / 1.6; // 16 : 10
+            frame.height = frame.width / 2.0; // 16 : 10
 
-            modal.top = ( ( viewport.height - frame.height ) / 2 ) + "px";
+            modal.top = ( (viewport.height - frame.height) / 2 ) + "px";
             modal.left = "0px";
-
             $selector.modal.css( modal );
-
             player.obj.setSize( frame.width, frame.height );
         }
+
         //iframe 보이기
         function showPlayer(){
             if (!player.obj){
