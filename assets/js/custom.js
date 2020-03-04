@@ -59,7 +59,7 @@
         movieCont.eq(index).css("display", "block")
      })
 
-     //공지사항 탭메뉴
+     /* 공지사항 탭메뉴 */
      var tabMenu = $(".notice");
      tabMenu.find("ul > li > ul").hide();
      tabMenu.find("li.active > ul").show();
@@ -70,5 +70,17 @@
      }
      
      tabMenu.find("ul > li > a").click(tabList).focus(tabList)
+    
+    
+    
+    //sub01
+    
+    /* 영화 부분 탭메뉴 */
+    let movieListTit = $('.movie_list_tit ul li');
+    movieListTit.click(function(){
+        movieListTit.removeClass('active');
+       $(this).addClass('active');
+    });
+    
 
 })(jQuery);
