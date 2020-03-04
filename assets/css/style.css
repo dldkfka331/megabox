@@ -400,3 +400,27 @@ body.modal_on {overflow: hidden;}
     .service ul li span {width: 70px; height: 70px;}
     .service ul li strong {font-size: 14px;}
 }
+
+
+
+
+
+
+
+
+/* sub01 */
+
+/*movie_list*/
+.movie_list {padding-top: 40px;}
+.movie_list h2 {font-size: 30px; padding-bottom: 30px;}
+.movie_list_tit {font-size: 18px;}
+.movie_list_tit ul {display: flex; justify-content: space-around;}
+.movie_list_tit ul li {width: 25%; border: 1px solid #c6c6c6; border-bottom: 1px solid #503396; text-align: center; }
+.movie_list_tit ul li:nth-child(2),
+.movie_list_tit ul li:nth-child(3),
+.movie_list_tit ul li:nth-child(4) {border-left: none}
+.movie_list_tit ul li {width: 25%; border: 1px solid #c6c6c6; text-align: center }
+.movie_list_tit ul li a {display: block; padding: 6px 0;}
+.movie_list_tit ul li.active a {}
+
+
