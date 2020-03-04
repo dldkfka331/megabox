@@ -249,12 +249,33 @@ body.modal_on {overflow: hidden;}
 .movie_list_box01 {position: relative;}
 .search_box {position: absolute; top: 0; right: 0;}
 .search_box_input {width: 220px; border: 1px solid #ddd; padding: 5px; font-size: 16px;}
-.search_box_btn {position: absolute; top: 0; right: 3px; height: 100%; }
+.search_box_btn {position: absolute; top: 0; right: 3px; width: 30px; height: 100%; background: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-search-input.png) no-repeat center; }
 .movie_list_box > div { } 
 .movie_list_box_blocks {padding-top: 70px; display: flex; flex-wrap: wrap; justify-content: space-around;}
-.movie_list_box_blocks > div {background: #000; height: 300px; width: 22%; margin-right: 3%; margin-bottom: 30px; } 
+.movie_list_box_blocks > div {width: 22%; margin-right: 3%; margin-bottom: 30px;} 
 .movie_list_box_blocks > div:nth-child(4n) {margin-right: 0;} 
 
+.movie_list_box_block_img {background: url(https://img.megabox.co.kr/SharedImg/2020/02/25/cH7qHYtiXhvrIwZVNraUkjfGPPUj4M5W_420.jpg) center no-repeat; background-size: cover; width: 100%; height: 345px; position: relative; counter-reset: section; }
+.movie_list_box_block_img:before {counter-increment: section; content: counter(section); position: absolute; top: 10px; left: 10px; font-size: 28px; font-style: italic; color: #fff; text-shadow: 0px 0px 2px 2px #ccc;}
+.movie_list_box_block_img_hover {opacity: 0;}
+.movie_list_box_block_img:hover .movie_list_box_block_img_hover {opacity: 1; height: 100%; width: 100%; background: rgba(0,0,0,.7); color: #fff; padding: 20px; font-size: 16px; position: relative; box-sizing: border-box; transition: opacity .5s}
+.movie_list_box_block_img_hover_star {position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center; }
+.movie_list_box_block_img_hover_star span {font-size: 24px; padding: 15px; color: #34afec}
+.movie_list_box_block_img_hover_star span:nth-child(1) {color: #e122ec}
+.movie_list_box_block_img_hover_star strong {font-size: 26px;}
+
+.movie_list_box_block_tit {padding-top: 10px;}
+.movie_list_box_block_tit h4 {font-size: 24px; position: relative; padding-left: 34px; padding-bottom: 5px;}
+.movie_list_box_block_tit h4:before {content: ''; position: absolute; top: 3px; left: 0; width: 29px; height: 29px; background: url(../img/icon.png) no-repeat center ; background-position: -29px -125px;}
+.movie_list_box_block_text {padding-bottom: 10px;}
+.movie_list_box_block_text ul li{display: inline-block; font-size: 16px; position: relative; padding-right: 15px;}
+.movie_list_box_block_text ul li:before {content: ''; width: 1px; height: 16px; position: absolute; top: 5px; right: 5px; background: #ccc;}
+.movie_list_box_block_text ul li:last-child:before {width: 0;}
+.movie_list_box_block_btn {display: flex; justify-content: space-around;}
+.movie_list_box_block_btn01 {width: 30%; border-radius: 5px; position: relative; background: #fff; color: #503396; border: 1px solid #ddd; padding: 10px 0 10px 10px;}
+.movie_list_box_block_btn01:before {content: ''; position: absolute; top: 15px; left: 12px; width: 17px; height: 15px; background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-gray.png) no-repeat;}
+.movie_list_box_block_btn01.click:before {background-position: -17px 0px;}
+.movie_list_box_block_btn02 {width: 66%; padding: 10px 0; border-radius: 5px; font-size: 16px; color: #fff; background: #503396;}
 
 
 
