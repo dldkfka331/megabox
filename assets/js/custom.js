@@ -82,5 +82,10 @@
        $(this).addClass('active');
     });
     
+    /* 영화 좋아요 클릭 */
+    $('.movie_list_box_block_btn01').click(function(){
+       $(this).toggleClass('click');
+    });
+    
 
 })(jQuery);
