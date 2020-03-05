@@ -77,9 +77,15 @@
     
     /* 영화 부분 탭메뉴 */
     let movieListTit = $('.movie_list_tit ul li');
+    let movieListBox = $('.movie_list_box > div');
     movieListTit.click(function(){
+        let target = $(this);
+        let index = target.index();
+        let thisMovieList = movieListBox.eq(index);
         movieListTit.removeClass('active');
        $(this).addClass('active');
+        movieListBox.css('display','none');
+        thisMovieList.css('display','block');
     });
     
     /* 영화 좋아요 클릭 */
