@@ -44,6 +44,13 @@
         }
      })
 
+     /* mNav */
+     let ham = $('.ham');
+    ham.click(function(){
+        $('.mNav_list').slideToggle();
+        $(this).toggleClass('active')
+    });
+     
      /* 영화 차트 탭 메뉴 */
      let movieBtn = $(".movie_tit > ul > li");
      let movieCont = $(".movie_chart > div");

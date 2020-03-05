@@ -25,8 +25,17 @@
 /* 모바일용 햄버거 ham */
 .ham {display: block; width: 25px; height: 10px; padding: 15px 10px;}
 .ham span{display: block; width: 25px; height: 4px; background: #39106a; position: relative;}
-.ham span:before{content: ''; display: block; width: 25px; height: 4px; background: #39106a;position: absolute; left: 0; bottom: -7px;}
-.ham span:after{content: ''; display: block; width: 25px; height: 4px; background: #39106a;position: absolute; left: 0; top: -7px;}
+.ham span:before{content: ''; display: block; width: 25px; height: 4px; background: #39106a;position: absolute; left: 0; bottom: -7px; transition: all .3s}
+.ham span:after{content: ''; display: block; width: 25px; height: 4px; background: #39106a;position: absolute; left: 0; top: -7px; transition: all .3s}
+.ham.active span {background: transparent;}
+.ham.active span:before {bottom: 2px; transform: rotate(45deg)}
+.ham.active span:after {top: -2px; transform: rotate(-45deg)}
+
+
+.mNav_list {display: none; position: absolute; top: 51px; right: 24px; text-align: right; z-index: 999; color: #fff;}
+.mNav_list ul li {background: rgba(0,0,0,.7); margin: 3px 0; border: 1px solid #fff}
+.mNav_list ul li a {display: block; padding: 5px 10px 5px 20px; color: #fff; font-size: 16px;}
+
 
 /* header */
 .header h1 {float: left;}
@@ -371,6 +380,7 @@ body.modal_on {overflow: hidden;}
 }
 @media(max-width:768px){
     body {background: #d9d7e0;}
+    .mNav_list {right: 14px;}
     #movie {background: none;}
     #movie .row { background: #fff; margin: 24px 24px 0 24px; padding: 24px;}
     #mNav{right: 6px;}
@@ -427,6 +437,8 @@ body.modal_on {overflow: hidden;}
     
 }
 @media(max-width:600px){
+    .mNav_list ul li {background: #39106a;}
+    .mNav_list ul li a{font-size: 14px;}
     .slider {height: 400px; }
     .banner_menu {top: 16px;}    
     .banner_menu .bm_right ul li.purple a {font-size: 14px; padding: 3px 5px 5px 5px; background: rgba(0,0,0,.6); border-color: #fff; color: #fff;}   
